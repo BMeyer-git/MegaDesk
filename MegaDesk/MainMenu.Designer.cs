@@ -36,7 +36,7 @@
             // 
             // btnAddNewQuote
             // 
-            this.btnAddNewQuote.Location = new System.Drawing.Point(12, 12);
+            this.btnAddNewQuote.Location = new System.Drawing.Point(12, 30);
             this.btnAddNewQuote.Name = "btnAddNewQuote";
             this.btnAddNewQuote.Size = new System.Drawing.Size(358, 93);
             this.btnAddNewQuote.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnViewQuotes
             // 
-            this.btnViewQuotes.Location = new System.Drawing.Point(12, 111);
+            this.btnViewQuotes.Location = new System.Drawing.Point(12, 129);
             this.btnViewQuotes.Name = "btnViewQuotes";
             this.btnViewQuotes.Size = new System.Drawing.Size(358, 93);
             this.btnViewQuotes.TabIndex = 1;
@@ -62,10 +62,11 @@
             this.btnSearchQuotes.TabIndex = 2;
             this.btnSearchQuotes.Text = "Search Quotes";
             this.btnSearchQuotes.UseVisualStyleBackColor = true;
+            this.btnSearchQuotes.Click += new System.EventHandler(this.btnSearchQuotes_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(12, 345);
+            this.btnExit.Location = new System.Drawing.Point(12, 327);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(358, 93);
             this.btnExit.TabIndex = 3;
@@ -83,7 +84,7 @@
             this.Controls.Add(this.btnViewQuotes);
             this.Controls.Add(this.btnAddNewQuote);
             this.Name = "MainMenu";
-            this.Text = "MegaDesk";
+            this.Text = "MegaDesk-Meyer";
             this.ResumeLayout(false);
 
         }

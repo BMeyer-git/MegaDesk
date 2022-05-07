@@ -12,9 +12,22 @@ namespace MegaDesk
 {
     public partial class SearchQuotes : Form
     {
-        public SearchQuotes()
+        Form _mainMenu;
+        public SearchQuotes(Form mainMenu)
         {
             InitializeComponent();
+
+            _mainMenu = mainMenu;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SearchQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _mainMenu.Show();
         }
     }
 }

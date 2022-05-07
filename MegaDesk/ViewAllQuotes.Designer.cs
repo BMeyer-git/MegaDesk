@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(124, 330);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(169, 70);
+            this.btnCancel.TabIndex = 2;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCancel);
             this.Name = "ViewAllQuotes";
             this.Text = "ViewAllQuotes";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewAllQuotes_FormClosed);
@@ -43,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCancel;
     }
 }
